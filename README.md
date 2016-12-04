@@ -7,13 +7,13 @@ This repo is specially created for all the work done my me as a part of Coursera
 :boom: **git hub initialization commands**
 [http://dont-be-afraid-to-commit.readthedocs.io/en/latest/git/commandlinegit.html]
 echo "# ML-Coursera-AndrewNg" >> README.md
-'''
+```
 git init
 git add README.md
 git commit -m "first commit"
 git remote add origin https://github.com/YDD9/ML-Coursera-AndrewNg.git
 git push -u origin master
-'''
+```
 
 
 :boom: **Installing octave via MAC software management tool homebrew**
@@ -31,15 +31,15 @@ accept all octave command
 
 
 :boom: **Issues of plot frozen and wrong terminal error, add following into the config**
-'''
+```
 graphics_toolkit('gnuplot');
 setenv('GNUTERM','qt');
-'''
+```
 [http://stackoverflow.com/questions/32086405/warning-plotting-with-an-unknown-terminal-no-output-will-be-generated-pleas]
-or 'setenv('GNUTERM','X11');' depending on your gnuplot list
+or `setenv('GNUTERM','X11');` depending on your gnuplot list
 
 if can be verified inside octave-cli with command:
-'''
+```
 available_graphics_toolkits;
 loaded_graphics_toolkits;
-'''
+```
