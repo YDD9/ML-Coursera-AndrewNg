@@ -5,7 +5,7 @@ This repo is specially created for all the work done my me as a part of Coursera
 
 
 :boom: **git hub initialization commands**
-[http://dont-be-afraid-to-commit.readthedocs.io/en/latest/git/commandlinegit.html]
+[http://dont-be-afraid-to-commit.readthedocs.io/en/latest/git/commandlinegit.html](git commit link)
 echo "# ML-Coursera-AndrewNg" >> README.md
 ```
 git init
