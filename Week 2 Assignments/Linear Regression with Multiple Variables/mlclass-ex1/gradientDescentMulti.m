@@ -19,11 +19,12 @@ for iter = 1:num_iters
 
 
 
-    delta = (1/m)*sum(X.*repmat((X*theta - y), 1, size(X,2)));
-    
-    
-    theta = (theta' - (alpha * delta))';
+%    delta = (1/m)*sum(X.*repmat((X*theta - y), 1, size(X,2)));
+%    
+%    
+%    theta = (theta' - (alpha * delta))';
 
+	  theta = theta - alpha/m * (X' * (X * theta - y));
 
 
 

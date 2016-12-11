@@ -23,10 +23,10 @@ symlink path:
 /urs/local/bin
 
 
-:boom: **octave startup config file path:**
-/usr/local/Cellar/octave/4.2.0/share/octave/site/m/startup
-accept all octave command
-[Detailed about this config file](https://www.gnu.org/software/octave/doc/v4.0.0/Startup-Files.html)
+:boom: **octave startup config file: octaverc**
+/usr/local/Cellar/octave/4.2.0/share/octave/site/m/startup/octaverc
+the config file accepts all octave command
+[Details of the config file](https://www.gnu.org/software/octave/doc/v4.0.0/Startup-Files.html)
 
 
 :boom: **Issues of plot frozen and wrong terminal error, add following into the config**
@@ -34,10 +34,11 @@ accept all octave command
 graphics_toolkit('gnuplot');
 setenv('GNUTERM','qt');
 ```
-[issue details and solution](http://stackoverflow.com/questions/32086405/warning-plotting-with-an-unknown-terminal-no-output-will-be-generated-pleas)
-or `setenv('GNUTERM','X11');` depending on your gnuplot list
+[Issue description and solution](http://stackoverflow.com/questions/32086405/warning-plotting-with-an-unknown-terminal-no-output-will-be-generated-pleas)
+depending on your env list, you may need to use `setenv('GNUTERM','X11');` instead of 'qt'
 
-if can be verified inside octave-cli with command:
+Above setting can be verified:
+first open terminal and enter `octave-cli` to activate octave interface then
 ```
 available_graphics_toolkits;
 loaded_graphics_toolkits;
